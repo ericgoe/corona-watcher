@@ -1,6 +1,7 @@
 {
   "name": "corona-watcher",
   "author": "Eric Goerens",
+  "repository": "github:ericgoe/corona-watcher",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
