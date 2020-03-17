@@ -1,0 +1,24 @@
+{
+  "name": "corona-watcher",
+  "author": "Eric Goerens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@types/node": "^13.7.7",
+    "axios": "^0.19.2",
+    "moment": "^2.24.0",
+    "typescript": "^3.8.3",
+    "pushover-notifications": "^1.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "nodemon --signal SIGTERM  -e ts --exec \"npm run start\"",
+    "start": "rm -rf ./dist/* && tsc && node ./dist/index.js || exit 1"
+  },
+  "license": "MIT"
+}

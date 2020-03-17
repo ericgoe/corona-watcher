@@ -1,0 +1,32 @@
+{
+    "defaultSeverity": "error",
+    "rules": {
+        "typedef": [
+            true,
+            "call-signature",
+            "parameter",
+            "property-declaration",
+            "variable-declaration",
+            "member-variable-declaration",
+            "object-destructuring",
+            "array-destructuring"
+        ],
+        "member-ordering": [
+            true,
+            {
+              "order": [
+                "public-static-field",
+                "public-instance-field",
+                "public-constructor",
+                "private-static-field",
+                "private-instance-field",
+                "private-constructor",
+                "public-instance-method",
+                "protected-instance-method",
+                "private-instance-method"
+              ]
+            }
+        ]
+    },
+    "rulesDirectory": []
+}
